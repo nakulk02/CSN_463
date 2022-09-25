@@ -1,5 +1,3 @@
-package assignment2;
-
 public class Q4 {
 	public static void main(String args[])
 	{
@@ -10,7 +8,7 @@ public class Q4 {
 			new_population+=(new_population*5)/100;
 			year_count++;
 		}
-		System.out.println("Year count when population exceeds 15000: "+year_count);
+		System.out.println("Year count when population exceeds 150000: "+year_count);
 		System.out.println("New population:"+new_population);
 		
 		
