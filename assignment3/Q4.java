@@ -1,4 +1,3 @@
-package assignment3;
 import java.util.Scanner;  // Import the Scanner class
 
 public class Q4 {
