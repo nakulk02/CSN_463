@@ -29,12 +29,22 @@ class Number{
         return true;
     }
     public boolean isArmstrong(){
-        double n = x;
+        if(x!=Math.ceil(x))
+        {
+        	return false;
+        }
+        int n=(int)x,length=0;
         double sum = 0;
+        while(n!=0)
+        {
+        	length+=1;
+        	n=n/10;
+        }
+        n=(int)x;
+        int r;
         while(n>0){
-            double r;
             r=n%10;    
-            sum=sum+(r*r*r);    
+            sum=sum+Math.pow(r,length);    
             n=n/10;    
         }
         if(sum == x){
