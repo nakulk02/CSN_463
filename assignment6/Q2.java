@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question_2 {
+public class Q2 {
 	
 	public static int addition(int num1, int num2) {
 		if(num1 < 0 || num2 < 0) {  
