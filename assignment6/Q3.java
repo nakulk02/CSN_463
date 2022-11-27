@@ -9,28 +9,24 @@ class Calculator {
          this.num2 = num2;
      }
 
- 	public int addition() {  
+ 	public void addition() {  
  		int ans = num1 + num2; 
-		System.out.println("Sum : " + ans);
-		return ans;
+		System.out.println("Addition : " + ans);
 	}
 	
-	public int subtraction() { 
+	public void subtraction() { 
 		int ans = num1 - num2;
-		System.out.println("Difference: " + ans);
-		return ans;
+		System.out.println("Subtraction: " + ans);
 	}
 	
-	public double division() {
+	public void division() {
 		double ans = (double) num1 / num2; 
 		System.out.println("Division : " +ans);
-		return ans;
 	}
 	
-	public int multiply() {
+	public void multiply() {
 		int ans = num1 * num2; 
-	    System.out.println("Product : " + ans);
-	    return ans;
+	    System.out.println("Multiplication : " + ans);
 	}
  }
 
@@ -42,31 +38,11 @@ public class Q3 {
 		 try {
 			 num1 = Integer.parseInt(scn.nextLine());
 			 num2 = Integer.parseInt(scn.nextLine());
-			 
 			 Calculator obj1 = new Calculator(num1, num2); 
 			 obj1.addition(); 
-			 
-			
-			 num1 = Integer.parseInt(scn.nextLine());
-			 
-			 num2 = Integer.parseInt(scn.nextLine());
-			 
-			 Calculator obj2 = new Calculator(num1, num2); 
-			 obj2.subtraction(); 
-			 
-			 
-			 num1 = Integer.parseInt(scn.nextLine())
-			 num2 = Integer.parseInt(scn.nextLine());
-			 
-			 Calculator obj3 = new Calculator(num1, num2);
-			 obj3.multiply(); 
-			 
-			 
-			 num1 = Integer.parseInt(scn.nextLine());
-			 num2 = Integer.parseInt(scn.nextLine());
-			 
-			 Calculator obj4 = new Calculator(num1, num2); 
-			 obj4.division(); 
+			 obj1.subtraction(); 
+			 obj1.multiply(); 
+			 obj1.division(); 
 		 }
 		 catch(NumberFormatException e) { 
 			 System.out.println("invalid input " + e);
