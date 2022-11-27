@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question_1 {
+public class Q1 {
 	
 	public static double division(int num1, int num2) { 
 		if(num1 == 0 || num2 == 0) { 
